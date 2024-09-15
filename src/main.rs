@@ -1,5 +1,9 @@
-mod lesson2;
+mod modules {
+    pub mod lesson2 {
+        pub mod guessing_game;
+    }
+}
 
 fn main() {
-    lesson2::guessing_game();
+    modules::lesson2::guessing_game::guessing_game();
 }
