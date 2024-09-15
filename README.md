@@ -1,2 +1,2 @@
 # rust-lang
-Class wise lessons for rust-lang
+Topic wise lessons for rust-lang
