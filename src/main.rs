@@ -1,3 +1,5 @@
+mod lesson2;
+
 fn main() {
-    println!("Hello, world!");
+    lesson2::guessing_game();
 }
