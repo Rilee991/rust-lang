@@ -1,0 +1,38 @@
+1. Define a variable using `let` keyword. By default all variables in rust are immutable.
+    - Reasons:
+        1. Avoiding race conditions if multiple threads wants to read it.
+        2. Knowing a variable is immutable, allows the compiler to optimise the code better.
+    - We can make a variable mutable by adding `mut` keyword.
+
+2. We can use `const` keyword to make constant variables.
+    - Difference b/w let and const is `mut` cannot be used to make it mutable. It can never be mutable.
+    - We cannot initiate constant variables with any value that is computed at runtime. Example - functions, match operations.
+
+3. Shadowing - Shadowing allows you to redefine a variable with the same name, preserve mutability and change types.
+
+4. Datatypes - 
+    - Scaler
+        - Having single values
+        - 4 main scaler values - integes, floats, boolean, chars
+    Compound - 
+        - Represent group of values
+        - Tuples - Like an array of fixed size comprising of similar values with different datatypes
+        - Arrays - Fixed size group of elements having same datatypes.
+
+5. Functions
+    - Starts with fn keyword followed by fn name.
+    - If fn returns something then name is followed by '->' and return type.
+    - Uses snake_case for function names
+
+6. Control Flow
+    - If else statements are similar as every other language
+    - Only diff is in rust for if statements it actually has to be a condition, Example if(5) { // do somehting} will fail
+    as 5 is not a condition. We have to do something like if(5 < 6) { //do something}
+
+7. Loops
+    - Normal loop - Can be created using simple keyword "loop" { // do something }. To get out of it we can use break.
+    If we do break 5; then the loop will return 5 on breaking.
+    - While loop - simple similar syntax while(condition) { // do something}
+    - For loop -
+        - Simple numbers = for 0..5 {} loops from 0 to 4.
+        - Iterators - Used for looping through collections
